@@ -7,3 +7,15 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Restaurant.destroy_all
+
+Restaurant.create!(
+  [
+    { name: "Epicure", address: "Paris", phone_number: "0123456789", category: "french" },
+    { name: "Sushi Zen", address: "Tokyo", phone_number: "1234567890", category: "japanese" },
+    { name: "Bella Italia", address: "Rome", phone_number: "2345678901", category: "italian" },
+    { name: "Wok Express", address: "Beijing", phone_number: "3456789012", category: "chinese" },
+    { name: "Le Bruxelles", address: "Brussels", phone_number: "4567890123", category: "belgian" }
+  ]
+)
